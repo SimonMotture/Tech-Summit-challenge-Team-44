@@ -1,0 +1,56 @@
+NCC Version  :3.5.0.1-2532387a
+Cluster Id  :53626
+Cluster Name  :POC046
+Cluster Ips  :['10.21.46.29', '10.21.46.30', '10.21.46.31', '10.21.46.32']
+Timestamp  :Wed Apr 11 21:37:34 2018
+
+################################################################################
+SUMMARY RESULT
+################################################################################
+
+Detailed information for bmc_bios_version_check:
+Node 10.21.46.30: 
+FAIL: BMC version 3.28 < 3.35. Should upgrade it at least to version 3.35. BIOS version G5T-1.21. Should upgrade at least to version G4G5T3.0. 
+Node 10.21.46.29: 
+FAIL: BMC version 3.28 < 3.35. Should upgrade it at least to version 3.35. BIOS version G5T-1.21. Should upgrade at least to version G4G5T3.0. 
+Node 10.21.46.31: 
+FAIL: BMC version 3.28 < 3.35. Should upgrade it at least to version 3.35. BIOS version G5T-1.21. Should upgrade at least to version G4G5T3.0. 
+Node 10.21.46.32: 
+FAIL: BMC version 3.28 < 3.35. Should upgrade it at least to version 3.35. BIOS version G5T-1.21. Should upgrade at least to version G4G5T3.0. 
+Refer to KB 3565 (http://portal.nutanix.com/kb/3565) for details on bmc_bios_version_check
+
+Detailed information for ldap_config_check:
+Node 10.21.46.30: 
+FAIL: 1 ldap non-ip address cannot be resolved
+Refer to KB 2997 (http://portal.nutanix.com/kb/2997) for details on ldap_config_check
+
+Detailed information for auto_support_check:
+Node 10.21.46.30: 
+INFO: Auto support is not configured
+Refer to KB 1585 (http://portal.nutanix.com/kb/1585) for details on auto_support_check
+
+Detailed information for dns_server_check:
+Node 10.21.46.30: 
+INFO: Only one name server is configured
+Node 10.21.46.29: 
+INFO: Only one name server is configured
+Node 10.21.46.31: 
+INFO: Only one name server is configured
+Node 10.21.46.32: 
+INFO: Only one name server is configured
+Refer to KB 3005 (http://portal.nutanix.com/kb/3005) for details on dns_server_check
+
+Detailed information for ipmi_sel_check:
+Node 10.21.46.29: 
+INFO: Latest 2 of 2 IPMI SEL assertion(s) in the past 24 hours are:
+ 147 | 04/11/2018 | 06:06:45 | System Event #0xff | PEF Action () | Asserted
+ 148 | 04/11/2018 | 08:36:52 | System Event #0xff | PEF Action () | Asserted
+Refer to KB 1590 (http://portal.nutanix.com/kb/1590) for details on ipmi_sel_check
++---------------+
+| State | Count |
++---------------+
+| Pass  | 172   |
+| Info  | 3     |
+| Fail  | 2     |
+| Total | 177   |
++---------------+
